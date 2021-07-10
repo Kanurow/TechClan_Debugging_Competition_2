@@ -127,7 +127,7 @@ def deleteSpecialization(request, pk):
         same.delete()
         return redirect('customer', request.user.customer.id)
     context = {'item':same}
-    return render(request, 'accounts/delete.html', context)
+    return render(request, 'account/delete.html', context)
 
 @login_required(login_url='login')
 def userPage(request):
